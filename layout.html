@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "Html Html Html"
+                "Css Js Js"
+                "Css Java Java"
+                "Css Python .";
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 60px auto 50px;
+            gap: 10px;
+            height: 100vh;
+            padding: 10px;
+        }
+ 
+        .Html {
+            grid-area: Html;
+            background: #19a7a7;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        .Css {
+            grid-area: Css;
+            background: #a4e0af;
+            display: grid;
+             align-items: center;
+            justify-content: center; 
+            color: white;
+            
+        }
+
+        .Js {
+            grid-area: Js;
+            background: #b372b5;
+            display: grid;
+             align-items: center;
+            justify-content: center; 
+           
+            
+        }
+
+        .Java {
+            grid-area: Java;
+            background: black;
+           display: grid;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+
+        .Python {
+             grid-area: Python;
+            display: grid;
+            background: #ea7d7d;
+            align-items: center;
+            justify-content: center; 
+           
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="Html">Html</div>
+        <div class="Css">Css</div>
+        <div class="Js">Js</div>
+        <div class="Java">Java</div>
+        <div class="Python">Python</div>
+    </div>
+
+</body>
+</html>
